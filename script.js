@@ -26,8 +26,9 @@ function getYears(){
 }
 function fillYearSelect(el,includeAll=false){
   if(!el)return;
-  const first=includeAll?'<option value="all">সকল বছর</option>':'<option value="">-- সাল নির্বাচন করুন --</option>';
-  el.innerHTML=first+years.map(y=>`<option value="${esc(y)}">${esc(y)}</option>`).join('');
+  const placeholder='<option value="">-- সাল নির্বাচন করুন --</option>';
+  const all=includeAll?'<option value="all">সকল বছর</option>':'';
+  el.innerHTML=placeholder+all+years.map(y=>`<option value="${esc(y)}">${esc(y)}</option>`).join('');
 }
 function fillYearSelectors(){
   years=getYears();

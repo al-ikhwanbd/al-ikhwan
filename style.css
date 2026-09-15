@@ -18,7 +18,7 @@ body.menu-open{overflow:hidden}
 .hero h1{font-size:clamp(29px,5.5vw,45px);line-height:1.2;margin:4px 0 8px;font-weight:900}
 .hero p{font-size:15px;margin:0 0 3px}
 .hero small{font-size:13px;opacity:.9}
-#mobileMenu{display:flex;flex-direction:column;position:fixed;z-index:1001;top:0;right:-100%;width:min(390px,88vw);height:100vh;background:#fff;color:var(--text);padding:76px 22px 28px;box-shadow:-12px 0 35px rgba(0,0,0,.18);transition:right .28s ease;overflow-y:auto;visibility:hidden;pointer-events:none}
+#mobileMenu{display:flex;flex-direction:column;position:fixed;z-index:1001;top:0;right:-100%;width:min(340px,82vw);height:100vh;background:#fff;color:var(--text);padding:76px 22px 28px;box-shadow:-12px 0 35px rgba(0,0,0,.18);transition:right .28s ease;overflow-y:auto;visibility:hidden;pointer-events:none}
 #mobileMenu.open{right:0;visibility:visible;pointer-events:auto}
 .menu-overlay{position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:1000;opacity:0;visibility:hidden;transition:.25s}
 .menu-overlay.show{opacity:1;visibility:visible}
@@ -148,8 +148,8 @@ footer{background:#076f45;color:#fff;text-align:center;padding:24px 0;font-size:
  .admin-choice-grid button{min-height:100px}
  .form-actions{flex-direction:column}
  .login-card{padding:17px}
- #mobileMenu{width:88vw;min-width:290px;padding-left:17px;padding-right:17px}
- #mobileMenu a{font-size:17px;padding:15px 12px}
+ #mobileMenu{width:82vw;min-width:280px;padding-left:17px;padding-right:17px}
+ #mobileMenu a{font-size:18px;padding:15px 12px}
 }
 
 @media(max-width:420px){
